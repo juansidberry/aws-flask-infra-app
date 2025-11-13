@@ -1,0 +1,137 @@
+# ============================================
+# PYTHON
+# ============================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+dist/
+build/
+.cache/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Local development files
+.ipynb_checkpoints/
+
+
+# ============================================
+# FLASK APP / DOCKER
+# ============================================
+# Python dev configs
+*.log
+
+# Docker artifacts
+docker-compose.override.yml
+docker-compose.local.yml
+*.tar
+
+# Gunicorn access/error logs
+gunicorn-access.log
+gunicorn-error.log
+
+
+# ============================================
+# LAMBDA PACKAGING
+# ============================================
+# Lambda build directory (pip target directory)
+lambda/*/package/
+lambda/*/package.zip
+lambda/*/*.zip
+
+# Build artifacts created by CI
+build/
+*.zip
+
+
+# ============================================
+# TERRAFORM
+# ============================================
+# Terraform local state and crash logs
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate.backup
+crash.log
+crash.*.log
+
+# .terraform directories
+.terraform/
+**/.terraform/
+
+# Sensitive TF files
+*.tfvars
+*.tfvars.json
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terragrunt cache (if ever used)
+.terragrunt-cache/
+
+
+# ============================================
+# AWS CREDENTIALS & CONFIG
+# ============================================
+# Never commit AWS credentials
+.aws/
+*.pem
+*.key
+*.p12
+*.crt
+
+# Local AWS SAM / CDK folders (if extensions used later)
+.aws-sam/
+.cdk.out/
+
+
+# ============================================
+# GITHUB ACTIONS
+# ============================================
+# Do not commit runner artifacts
+.github/actions-temp/
+**/*-temp-*/ # GitHub runner temp directories
+
+
+# ============================================
+# SYSTEM / EDITOR / OS FILES
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+# ============================================
+# LOGS & OUTPUT FILES
+# ============================================
+*.log
+logs/
+*.out
+*.err
+
+# Python coverage reports
+.coverage
+htmlcov/
